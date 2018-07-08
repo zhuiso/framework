@@ -37,7 +37,9 @@ class JWTGenerateCommand extends Command
         $data = collect(Yaml::parse($this->file->get($file)));
         $data->put('JWT_SECRET', $key);
         $this->file->put($file, Yaml::dump($data->toArray()));
+        $sslcnf = $_SERVER['PHPRC'].DIRECTORY_SEPARATOR.'extras'.DIRECTORY_SEPARATOR.'ssl'.DIRECTORY_SEPARATOR.'openssl.cnf';
         $config = [
+            'config'           => $sslcnf,
             'curve_name'       => 'prime256v1',
             'digest_alg'       => 'sha512',
             'private_key_bits' => 4096,
