@@ -1,6 +1,7 @@
 {
     "name": "zs/framework",
     "description": "The Zs Foundation Framework",
+    "type":"package",
     "license": "Apache-2.0",
     "authors": [
         {

@@ -1,11 +1,11 @@
 <?php
-/**
- * This file is part of Notadd.
- *
- * @author TwilRoad <heshudong@ibenchu.com>
- * @copyright (c) 2016, notadd.com
- * @datetime 2016-10-20 20:40
- */
+// +----------------------------------------------------------------------
+// | Dscription:  The file is part of Zs
+// +----------------------------------------------------------------------
+// | Author: showkw <showkw@163.com>
+// +----------------------------------------------------------------------
+// | CopyRight: (c) 2018 zhuiso.com
+// +----------------------------------------------------------------------
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Auth\Access\Gate;
@@ -20,8 +20,8 @@ use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-use Notadd\Foundation\SearchEngine\Optimization;
-use Notadd\Foundation\Setting\Contracts\SettingsRepository;
+use Zs\Foundation\SearchEngine\Optimization;
+use Zs\Foundation\Setting\Contracts\SettingsRepository;
 
 if (!function_exists('abort')) {
     /**
@@ -103,7 +103,7 @@ if (!function_exists('app')) {
      * @param string $make
      * @param array  $parameters
      *
-     * @return mixed|\Notadd\Foundation\Application
+     * @return mixed|\Zs\Foundation\Application
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     function app($make = null, $parameters = [])

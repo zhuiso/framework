@@ -1,0 +1,40 @@
+<?php
+// +----------------------------------------------------------------------
+// | Dscription:  The file is part of Zs
+// +----------------------------------------------------------------------
+// | Author: showkw <showkw@163.com>
+// +----------------------------------------------------------------------
+// | CopyRight: (c) 2018 zhuiso.com
+// +----------------------------------------------------------------------
+
+use Illuminate\Database\Schema\Blueprint;
+use Zs\Foundation\Database\Migrations\Migration;
+
+/**
+ * Class DummyClass.
+ */
+class DummyClass extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        $this->schema->create('DummyTable', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        $this->schema->drop('DummyTable');
+    }
+}
