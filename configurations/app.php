@@ -51,7 +51,7 @@ return [
         Zs\Foundation\Translation\TranslationServiceProvider::class,
         Zs\Foundation\Http\HttpServiceProvider::class,
         Zs\Foundation\Administration\AdministrationServiceProvider::class,
-//        Zs\Installer\InstallerServiceProvider::class,
+        Zs\Installer\InstallerServiceProvider::class,
     ],
     'aliases'         => [
         'App'          => Illuminate\Support\Facades\App::class,
